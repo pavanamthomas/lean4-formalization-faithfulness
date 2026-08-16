@@ -1,0 +1,11 @@
+name = "formalization_faithfulness"
+version = "0.1.0"
+defaultTargets = ["FormalizationFaithfulness"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.0"
+
+[[lean_lib]]
+name = "FormalizationFaithfulness"
