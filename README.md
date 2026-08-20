@@ -95,7 +95,7 @@ To also reject `sorry` / `admit` placeholders:
 ./scripts/build_and_check.sh
 ```
 
-GitHub Actions uses `leanprover/lean-action@v1` to build the project and to run nanoda with `sorry` rejected.
+GitHub Actions runs `scripts/check_no_sorry.sh` and then `leanprover/lean-action@v1` with `build: true`. `nanoda` is not enabled (`nanoda: false` in `.github/workflows/ci.yml`). Placeholder rejection is the shell script, not nanoda.
 
 ## Review methodology
 
